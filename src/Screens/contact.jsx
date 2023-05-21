@@ -1,5 +1,5 @@
-import Navigation from "../../components/Navigation/navigation";
-import Title from "../../components/Title/title";
+import Navigation from "../components/navigation";
+import Title from "../components/title";
 
 const Contact = () => {
     return ( <>

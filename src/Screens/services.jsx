@@ -1,9 +1,9 @@
-import Navigation from "../../components/Navigation/navigation";
-import Title from "../../components/Title/title";
+import Navigation from "../components/navigation";
+import Title from "../components/title";
 const Services = () => {
     return ( <>
     
-    <Navigation/>
+    <Navigation link="services"/>
     <Title
         color="text-[black] "
         subcolor="text-[rgb(82,82,82)]"

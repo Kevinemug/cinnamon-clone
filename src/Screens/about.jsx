@@ -1,10 +1,10 @@
-import Navigation from "../../components/Navigation/navigation";
-import Title from "../../components/Title/title";
+import Navigation from "../components/navigation";
+import Title from "../components/title";
 
 const About = () => {
     return ( <>
     
-    <Navigation/>
+    <Navigation link="about"/>
     <Title  
         color="text-[black] "
         subcolor="text-[rgb(82,82,82)]"

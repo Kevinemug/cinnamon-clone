@@ -11,7 +11,7 @@ const HomeNav = () => {
       <div className=" ">
         <div className="lg:fixed w-screen top-[10px]">
           <nav className="   flex flex-col lg:flex-row lg:justify-around     h-[80px] ">
-            <div className="font-black  flex justify-between text-white text-2xl px-[40px] py-[20px]  lg:py-[10px]  lg:mt-[5px] ">
+            <div className="font-black bg-[#1C1C1C] bg-hero-pattern  flex justify-between text-white text-2xl px-[40px] py-[20px]  lg:py-[10px]  lg:mt-[5px] ">
               <div>CINNAMON</div>
               <div className=" block lg:hidden">
                { closed ? <HiOutlineMenuAlt3 onClick={()=> setClosed(false)} className="text-3xl"/> : <AiOutlineClose onClick={()=> setClosed(true)} className="text-3xl"/>} 
@@ -19,6 +19,17 @@ const HomeNav = () => {
             </div>
             <div className="flex  flex-col lg:flex-row gap-x-12  ">
               <div className={`flex flex-col lg:flex-row gap-10  lg:gap-x-8 lg:mt-[15px] mt-[50px] lg:flex ${ closed ? ' hidden' : ''} `} >
+                <Link to="/projects">
+                  <div className="lg:hidden link flex justify-center flex-col items-center">
+                    <a
+                      href=""
+                      className="font-bold transition text-white text-[18px] hover:text-[#5135ff]"
+                    >
+                      Home
+                    </a>
+                    <div className=" circle hidden transition h-[5px] w-[5px] mt-[5px]  rounded-[50%] bg-[#5135ff]"></div>
+                  </div>
+                </Link>
                 <Link to="/projects">
                   <div className="link flex justify-center flex-col items-center">
                     <a
@@ -75,7 +86,7 @@ const HomeNav = () => {
                   </div>
                 </Link>
                 <Link to="/contact">
-                  <div className="link flex justify-center flex-col items-center">
+                  <div className="lg:hidden link flex justify-center flex-col items-center">
                     <a
                       href=""
                       className="font-bold text-white transitiontext-[18px] hover:text-[#5135ff]"

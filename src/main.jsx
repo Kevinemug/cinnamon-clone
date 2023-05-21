@@ -5,13 +5,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import Home from './Screens/Home/home';
-import Projects from './Screens/Projects/projects';
-import Services from './Screens/Services/services';
-import Careers from './Screens/Careers/careers';
-import About from './Screens/About/about';
-import Blog from './Screens/Blog/blog';
-import Contact from './Screens/Contact/contact';
+import Home from './Screens/home';
+import Projects from './Screens/projects';
+import Services from './Screens/services';
+import Careers from './Screens/careers';
+import About from './Screens/about';
+import Blog from './Screens/blog';
+import Contact from './Screens/contact';
 
 const router = createBrowserRouter([
   {
