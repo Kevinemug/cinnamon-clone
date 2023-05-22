@@ -59,7 +59,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=" mt-[160px] md:mt-[170px] flex flex-col gap-[40px]   md:mt-[760px]  ">
+      <div className=" mt-[160px]  flex flex-col gap-[40px]   md:mt-[200px]  ">
         <BackgroundCard
           bg="bg-[#ffcb47]"
           img="https://cinnamon.agency/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6mf4aqitzrkt%2F2jr7RHJsFwOn3kEiUGEqAN%2F44d035a93444856bd117f168f348f59b%2FHero_Img__1_.png&w=1200&q=80"
