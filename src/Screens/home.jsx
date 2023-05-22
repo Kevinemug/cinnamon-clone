@@ -1,7 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useState, useEffect } from "react";
 import HomeNav from "../components/homeNav";
-import debounce from "lodash.debounce";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Title from "../components/title";
 import BackgroundCard from "../components/backgroundCard";
