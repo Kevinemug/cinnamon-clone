@@ -1,20 +1,31 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from 'react';
-const BackgroundCard = () => {
-    return (  <>
-    
-    <div className=' px-[20px]   lg:px-[10%]'>
-<div className='bg-[#ffcb47] w-full max-w-[100%]    h-auto'>
-<img src="https://cinnamon.agency/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6mf4aqitzrkt%2F2jr7RHJsFwOn3kEiUGEqAN%2F44d035a93444856bd117f168f348f59b%2FHero_Img__1_.png&w=1200&q=80" alt="Ios development" />
+import React from "react";
+const BackgroundCard = ({bg,img,smallTitle,bigTitle,subTitle, smallTitle_}) => {
+  return (
+    <>
+      <div className=" px-[30px]   lg:px-[10%]">
+        <div className={`${bg} w-full max-w-[100%]    h-auto`}>
+          <img
+            src={img}
+            alt="Ios development"
+          />
+        </div>
+        <div className="flex py-5 flex-col gap-[10px]">
+          <div className=" flex gap-[40px]">
+            
+            <div className="text-[#757575] font-black  text-[12px]">{smallTitle}</div>
+            <div className="text-[#757575] font-black  text-[12px]"> { smallTitle_}</div>
+            
+            </div>
+          <div className="text-[40px] font-bold hover:text-[rgb(81,53,255)]">{bigTitle}</div>
+          <div className="text-[16px] font-semibold text-[#757575]">
+           {subTitle}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-
-</div>
-
-
-    </div>
-    
-    
-    </>);
-}
- 
 export default BackgroundCard;
