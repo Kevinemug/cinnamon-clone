@@ -6,6 +6,8 @@ import debounce from "lodash.debounce";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Title from "../components/title";
 import BackgroundCard from "../components/backgroundCard";
+import ServiceCard from "../components/serviceCard";
+import Button from "../components/button";
 const Home = () => {
   const [isTop, setIsTop] = useState(true);
   const [open, setOpen] = useState(false);
@@ -85,6 +87,38 @@ const Home = () => {
           bigTitle="Fiona: Engage & Decide"
           subTitle="Fiona is a fintech consumer-facing website that enables users to search for financial products, discover them, and receive personalized recommendations."
         />
+      </div>
+
+      <div className="bg-[#1C1C1C] bg-hero-pattern px-[30px] lg:grid grid-cols-2">
+        <div className=" text-[40px] lg:text-[54px] lg:pl-[120px] text-[white] font-bold mt-[50px] pt-[60px]">
+          Our Services
+        </div>
+
+        <div className="py-[40px] flex flex-col gap-[90px] md:grid grid-cols-2 lg:pt-[120px]">
+          <ServiceCard
+            icon="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-design.cdb049ad.png&w=48&q=75"
+            title="Product design"
+            subTitle="Producing, prototyping and testing sketches, high-fidelity wireframes
+            and the final UI is a process that results in intuitive and impactful
+            design that’s easy on the eyes."
+          />
+          <ServiceCard
+            icon="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevelopment.1440a123.png&w=48&q=75"
+            title="Development"
+            subTitle="By selecting the befitting tech stack and architecture for the deliverable in question, we build out the product until it's a fully-fledged digital solution."
+          />
+          <ServiceCard
+            icon="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fquality-assurance.9e7ba47b.png&w=48&q=75"
+            title="Quality assurance"
+            subTitle="Our QA engineering team makes your product bug-free, bulletproof and performance-driven through both automatic and manual testing."
+          />
+          <ServiceCard
+            icon="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmarketing-and-growth.35184bb3.png&w=48&q=75"
+            title="Marketing & growth"
+            subTitle="By understanding the mechanics of digital marketing, we make sure to put your product, at the right time, in front of the right people. See Our Services"
+          />
+          <Button/>
+        </div>
       </div>
     </>
   );

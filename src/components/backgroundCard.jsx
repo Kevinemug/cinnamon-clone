@@ -5,8 +5,9 @@ const BackgroundCard = ({bg,img,smallTitle,bigTitle,subTitle, smallTitle_}) => {
   return (
     <>
       <div className=" px-[30px]   lg:px-[10%]">
-        <div className={`${bg} w-full max-w-[100%]    h-auto`}>
+        <div className={`${bg} w-full max-w-[100%]  transition  h-auto cardo`}>
           <img
+          className="transition "
             src={img}
             alt="Ios development"
           />

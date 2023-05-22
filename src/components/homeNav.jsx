@@ -10,7 +10,7 @@ const HomeNav = () => {
     <>
       <div className=" ">
         <div className="lg:fixed w-screen top-[10px] lg:top-0">
-          <nav className="   flex flex-col lg:flex-row lg:justify-around  bg-[#1C1C1C] bg-hero-pattern    h-[80px] ">
+          <nav className="   flex flex-col lg:flex-row lg:justify-around z-50 bg-[#1C1C1C] bg-hero-pattern    h-[80px] ">
             <div className="font-black  flex justify-between text-white text-2xl px-[40px] py-[20px]  lg:py-[10px]  lg:mt-[5px] ">
               <div>CINNAMON</div>
               <div className=" block lg:hidden">
