@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import HomeNav from "../components/homeNav";
-import Navigation from "../components/navigation";
 import debounce from "lodash.debounce";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Title from "../components/title";
@@ -10,35 +9,10 @@ import ServiceCard from "../components/serviceCard";
 import Button from "../components/button";
 import HomeCardGrid from "../components/homeCardGrid";
 const Home = () => {
-  const [isTop, setIsTop] = useState(true);
-  const [open, setOpen] = useState(false);
-  const handleScroll = debounce(() => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    // Check if the scroll position is at the top
-    if (scrollTop === 0) {
-      setIsTop(true);
-    } else {
-      setIsTop(false);
-    }
-  }, 200); // Debounce for 200ms
-  useEffect(() => {
-    // Attach the debounced onscroll event listener to the window
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      // Remove the event listener when the component unmounts
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [handleScroll]);
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
 
   return (
     <>
-      <HomeNav handler={handleOpen} boolean={true} />
+      <HomeNav />
 
       <div>
         <div className="bg-[#1C1C1C] bg-hero-pattern md:h-[600px] h-[100vh] lg:h-[100vh] w-screen max-w-[100%] ">
