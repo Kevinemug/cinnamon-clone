@@ -14,12 +14,12 @@ const BackgroundCard = ({bg,img,smallTitle,bigTitle,subTitle, smallTitle_}) => {
         <div className="flex py-5 flex-col gap-[10px]">
           <div className=" flex gap-[40px]">
             
-            <div className="text-[#757575] font-black  text-[12px]">{smallTitle}</div>
+            <div className="text-[#757575] font-black  text-[12px] ">{smallTitle}</div>
             <div className="text-[#757575] font-black  text-[12px]"> { smallTitle_}</div>
             
             </div>
-          <div className="text-[40px] font-bold hover:text-[rgb(81,53,255)]">{bigTitle}</div>
-          <div className="text-[16px] font-semibold text-[#757575]">
+          <div className="text-[40px] font-bold hover:text-[rgb(81,53,255)] md:w-1/2 md:text-[30px] lg:md:text-[50px]">{bigTitle}</div>
+          <div className="text-[16px] font-semibold text-[#757575] lg:w-[60%]">
            {subTitle}
           </div>
         </div>

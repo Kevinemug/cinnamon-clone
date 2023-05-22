@@ -38,7 +38,7 @@ const Home = () => {
       <HomeNav handler={handleOpen} boolean={true} />
 
       <div>
-        <div className="bg-[#1C1C1C] bg-hero-pattern h-[100vh] w-screen max-w-[100%] ">
+        <div className="bg-[#1C1C1C] bg-hero-pattern md:h-[600px] h-[100vh] lg:h-[100vh] w-screen max-w-[100%] ">
           <Title
             color="text-[#f6f6f6]"
             t1="Results focused design &"
@@ -48,18 +48,18 @@ const Home = () => {
             off the ground and build a momentum for your success"
           />
         </div>
-        <div className="transform flex -rotate-[90deg] ml-[50px]  lg:ml-[180px] font-semibold  h-[50%] -mt-[20px] lg:-mt-[20px] text-[#cbcbcb] origin-bottom-left ">
+        <div className="transform flex -rotate-[90deg] ml-[50px]  lg:ml-[180px] font-semibold  h-[50%] md: -mt-[20px] lg:-mt-[20px] text-[#cbcbcb] origin-bottom-left ">
           <div className="mx-[8px] animate-bounce">
             <AiOutlineArrowLeft className="text-xl " />
           </div>
           <div>SEE OUR WORK</div>
         </div>
-        <div className="flex  -mt-[200px]  ml-[200px] lg:ml-[1140px] lg:-mt-[250px]">
+        <div className="flex  -mt-[200px] md:-mt-[250px] ml-[200px] md:ml-[600px] lg:ml-[1140px] lg:-mt-[250px]">
           <div className="h-[140px] w-[140px] bg-no-repeat  shadow-3xl  bg-contain bg-center bg-hero-circle bg-[black] rounded-[50%]"></div>
         </div>
       </div>
 
-      <div className=" mt-[160px] flex flex-col gap-[40px] ">
+      <div className=" mt-[160px] md:mt-[200px] flex flex-col gap-[40px]   md:mt-[760px]  ">
         <BackgroundCard
           bg="bg-[#ffcb47]"
           img="https://cinnamon.agency/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6mf4aqitzrkt%2F2jr7RHJsFwOn3kEiUGEqAN%2F44d035a93444856bd117f168f348f59b%2FHero_Img__1_.png&w=1200&q=80"
