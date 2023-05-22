@@ -90,7 +90,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="bg-[#1C1C1C] bg-hero-pattern px-[30px] lg:grid grid-cols-2">
+      <div className="bg-[#1C1C1C] bg-hero-pattern px-[30px] lg:grid grid-cols-2 lg:mt-[150px]">
         <div className=" text-[40px] lg:text-[54px] lg:pl-[120px] text-[white] font-bold mt-[50px] pt-[60px]">
           Our Services
         </div>
