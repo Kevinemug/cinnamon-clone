@@ -8,6 +8,7 @@ import Title from "../components/title";
 import BackgroundCard from "../components/backgroundCard";
 import ServiceCard from "../components/serviceCard";
 import Button from "../components/button";
+import HomeCardGrid from "../components/homeCardGrid";
 const Home = () => {
   const [isTop, setIsTop] = useState(true);
   const [open, setOpen] = useState(false);
@@ -117,8 +118,12 @@ const Home = () => {
             title="Marketing & growth"
             subTitle="By understanding the mechanics of digital marketing, we make sure to put your product, at the right time, in front of the right people. See Our Services"
           />
-          <Button/>
+          <Button label="  See Our Services"/>
         </div>
+      </div>
+
+      <div>
+    <HomeCardGrid/>
       </div>
     </>
   );
