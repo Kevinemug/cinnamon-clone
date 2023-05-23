@@ -154,8 +154,8 @@ const Testimonial = () => {
                     </div>
                 </div>
                 <div className="flex gap-[60px] mt-[40px]">
-                    <div onClick={handlePreviousTestimonial}><img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-left.cd95ba98.png&w=48&q=100" alt="" /></div>
-                    <div onClick={handleNextTestimonial}><img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-right.edcfdab6.png&w=48&q=100" alt="" /></div>
+                    <div className=" hover:-translate-y-[10px] transition" onClick={handlePreviousTestimonial}><img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-left.cd95ba98.png&w=48&q=100" alt="" /></div>
+                    <div className=" hover:-translate-y-[10px] transition" onClick={handleNextTestimonial}><img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-right.edcfdab6.png&w=48&q=100" alt="" /></div>
                 </div>
             </div>
         </div>
