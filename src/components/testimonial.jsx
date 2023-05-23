@@ -6,7 +6,7 @@ const testimonialData = [
     {
       title: "Their team’s design skills definitely set them apart.",
       text: "Wonderful experience; the project manager and the designer were available for all my questions and at no point did I feel they struggle to create the design. The result is a-b-s-o-l-u-t-e-l-y perfect. Top-notch!",
-      name: "Eric C",
+      name: "Eric C,",
 
       image:" https://cinnamon.agency/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6mf4aqitzrkt%2F2Do3nk7UOI5VuYzwCZFEK1%2F25e83085cd8548425d1b7f04438b641b%2FMicrosoftTeams-image__101_.png&w=750&q=75",
       founder: "Founder Websun Solutions UG. Berlin, Germany",
