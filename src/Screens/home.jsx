@@ -8,6 +8,8 @@ import Button from "../components/button";
 import HomeCardGrid from "../components/homeCardGrid";
 import TestimonialIcon from "../components/testimonialIcon";
 import Testimonial from "../components/testimonial";
+import WhoWeAre from "../components/whoWeAre";
+import TeamCard from "../components/teamCard";
 const Home = () => {
 
   return (
@@ -102,6 +104,9 @@ const Home = () => {
       <div className="mt-[60px]">
         <Testimonial/>
       </div>
+      <div className="mt-[60px]">
+        <WhoWeAre/>
+        </div>
     </>
   );
 };
