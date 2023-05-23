@@ -137,7 +137,7 @@ const Testimonial = () => {
 
     return ( <>
 
-<div className="lg:ml-[150px] lg:flex flex-row  ">
+<div className="lg:ml-[150px] lg:flex flex-row transition ">
     <div>
         <div>
             <TestimonialIcon/>
@@ -154,14 +154,14 @@ const Testimonial = () => {
                     </div>
                 </div>
                 <div className="flex gap-[60px] mt-[40px]">
-                    <div className=" hover:-translate-y-[10px] transition" onClick={handlePreviousTestimonial}><img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-left.cd95ba98.png&w=48&q=100" alt="" /></div>
-                    <div className=" hover:-translate-y-[10px] transition" onClick={handleNextTestimonial}><img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-right.edcfdab6.png&w=48&q=100" alt="" /></div>
+                    <div className=" hover:-translate-y-[10px] transition cursor-pointer" onClick={handlePreviousTestimonial}><img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-left.cd95ba98.png&w=48&q=100" alt="" /></div>
+                    <div className=" hover:-translate-y-[10px] transition cursor-pointer" onClick={handleNextTestimonial}><img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-right.edcfdab6.png&w=48&q=100" alt="" /></div>
                 </div>
             </div>
         </div>
         </div>
 
-<div className="hidden lg:block w-[280px] h-[280px] mt-[100px] absolute left-[1200px]">
+<div className="hidden lg:block w-[280px] h-[280px] mt-[50px] absolute left-[1200px]">
     <img src={logo} alt="logo" />
 </div>
 
