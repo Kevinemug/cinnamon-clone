@@ -6,6 +6,8 @@ import BackgroundCard from "../components/backgroundCard";
 import ServiceCard from "../components/serviceCard";
 import Button from "../components/button";
 import HomeCardGrid from "../components/homeCardGrid";
+import TestimonialIcon from "../components/testimonialIcon";
+import Testimonial from "../components/testimonial";
 const Home = () => {
 
   return (
@@ -96,6 +98,9 @@ const Home = () => {
 
       <div>
     <HomeCardGrid/>
+      </div>
+      <div className="mt-[60px]">
+        <Testimonial/>
       </div>
     </>
   );

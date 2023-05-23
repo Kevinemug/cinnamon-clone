@@ -2,9 +2,9 @@ import Button from "./button";
 const HomeCardGrid = () => {
   return (
     <>
-      <div className="bg-[#f6f6f6] px-[30px] lg:pt-[100px]  lg:h-[600px] flex flex-col gap-[50px] lg:grid grid-cols-2 lg:pl-[150px] ">
+      <div className="bg-[#f6f6f6] px-[30px] lg:pt-[100px] h-[800px]  lg:h-[600px] flex flex-col gap-[50px] lg:grid grid-cols-2 lg:pl-[150px] ">
         <div className="text-[45px] lg:text-[65px] font-bold  w-[80%] pt-[70px] text-[#222222] md:w-[35%] lg:w-[60%]">
-          Agile team on demand “
+          Agile team on demand
         </div>
         <div className="lg:hidden">
           {" "}
