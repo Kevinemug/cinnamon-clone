@@ -10,10 +10,18 @@ import TestimonialIcon from "../components/testimonialIcon";
 import Testimonial from "../components/testimonial";
 import WhoWeAre from "../components/whoWeAre";
 import TeamCard from "../components/teamCard";
-import SecondHomeCardGrid from './../components/secondHomeCardGrid';
+import SecondHomeCardGrid from "./../components/secondHomeCardGrid";
 import SectionWithArrows from "../components/sectionWithArrows";
+import OfficeCards from "../components/officeCards";
+import React, { useRef } from 'react';
 const Home = () => {
-
+  const containerRef = useRef(null);
+  const handleScrollLeft = () => {
+    const container = containerRef.current;
+    if (container) {
+      container.scrollLeft -= 1000; // Adjust the scroll distance as needed
+    }
+  };
   return (
     <>
       <HomeNav />
@@ -96,26 +104,55 @@ const Home = () => {
             title="Marketing & growth"
             subTitle="By understanding the mechanics of digital marketing, we make sure to put your product, at the right time, in front of the right people. See Our Services"
           />
-          <Button label="  See Our Services"/>
+          <Button label="  See Our Services" />
         </div>
       </div>
 
       <div>
-    <HomeCardGrid/>
+        <HomeCardGrid />
       </div>
       <div className="mt-[60px]">
-        <Testimonial/>
+        <Testimonial />
       </div>
       <div className="mt-[60px]">
-        <WhoWeAre/>
+        <WhoWeAre />
+      </div>
+      <div>
+        <SecondHomeCardGrid />
+      </div>
+      <div className="mt-[370px] md:mt-[500px] lg:mt-[100px] ">
+        <SectionWithArrows />
+      </div>
+
+      <div className="mt-[90px] flex flex-col gap-[50px] lg:pl-[150px] lg:overflow-x-hidden">
+        <div className="text-[50px] font-bold text-[rgb(34,34,34)] pl-[30px] ">
+          Our offices
         </div>
-        <div>
-          <SecondHomeCardGrid/>
+        <div className="w-screen overflow-x-auto lg:overflow-x-hidden ">
+          <div className="flex min-w-full " ref={containerRef} >
+            <OfficeCards
+              place="Zagreb"
+              location=" Slavonska avenija 6, 10000, Zagreb, Croatia"
+              img="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fzagreb.b5180ce4.jpeg&w=640&q=75"
+            />
+            <OfficeCards
+              place="New York"
+              location="500 7th Ave, New York, NY 10018, USA"
+              img="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnew-york.4d639475.jpeg&w=640&q=75"
+            />
+            <OfficeCards
+              place="Belgrade"
+              location="Požeška 58, Beograd, Serbia"
+              img="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbelgrade.a9250fd0.jpeg&w=640&q=75"
+            />
           </div>
-          <div className="mt-[370px] md:mt-[500px] lg:mt-[100px] ">
-            <SectionWithArrows/>
-          </div>
-    </>
+        </div>
+      <div className="flex  -mt-[50px] gap-[70px] ml-[20px]">
+  <div><img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-left.cd95ba98.png&w=48&q=100" alt="" /></div>
+  <div><img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-right.edcfdab6.png&w=48&q=100" alt="" /></div>
+</div> 
+      </div>
+   </>
   );
 };
 
