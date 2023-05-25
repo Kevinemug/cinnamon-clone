@@ -11,6 +11,7 @@ import Testimonial from "../components/testimonial";
 import WhoWeAre from "../components/whoWeAre";
 import TeamCard from "../components/teamCard";
 import SecondHomeCardGrid from './../components/secondHomeCardGrid';
+import SectionWithArrows from "../components/sectionWithArrows";
 const Home = () => {
 
   return (
@@ -110,6 +111,9 @@ const Home = () => {
         </div>
         <div>
           <SecondHomeCardGrid/>
+          </div>
+          <div className="mt-[370px] md:mt-[500px] lg:mt-[100px] ">
+            <SectionWithArrows/>
           </div>
     </>
   );

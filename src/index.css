@@ -1,6 +1,29 @@
+
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Mont';
+    src: url('./Fonts/MontBold.woff2');
+}
+@font-face {
+    font-family: 'Mont';
+    src: url('./Fonts/MontHeavy.woff2');
+}
+@font-face {
+    font-family: 'Mont';
+    src: url('./Fonts/MontRegular.woff2');
+}
+@font-face {
+    font-family: 'Mont';
+    src: url('./Fonts/MontSemiBold.woff2');
+}
+
 
 .link:hover .circle{
 
