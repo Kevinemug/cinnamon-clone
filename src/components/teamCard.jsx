@@ -3,24 +3,28 @@
 import { MdOutlineHorizontalRule } from "react-icons/md";
 import Button from "./button"
 import { useState } from "react";
-const TeamCard = ({link,image,text}) => {
-    const [isActive,setIsActive]=useState('')
+const TeamCard = ({link,image,text,name}) => {
+    const [isActive,setIsActive]=useState('product')
 
-
+    const handleActiveLink = (link) => {
+      setIsActive(link)
+      
+        }
+      
 
 
   return (
     <>
-      <div className="md:flex  gap-[90px]">
-          <div className={`text-[24px] font-bold    ${isActive ? 'text-[#5135ff] flex' : ''} `} onClick={() => setIsActive(link)} >
-            <div className={`${isActive? 'block' : 'hidden'}`} >
+      <div className="md:grid grid-cols-2  -gap-x-[260px]">
+          <div className={`text-[24px] font-bold lg:w-1/2   ${isActive === link ? 'text-[#5135ff] flex' : ''} `} onClick={()=> handleActiveLink (link)} >
+            <div className={`${isActive === link ? 'block' : 'hidden'}`} >
               <MdOutlineHorizontalRule className="font-black text-5xl " />
             </div>
-            <div className=" ">{link}</div>
+            <div className=" " >{name}</div>
           </div>
                {
             isActive === link ? (
-                   <div className="flex flex-col gap-[40px]">
+                   <div className="flex flex-col gap-[40px] md:">
             <div className="md:w-[80%]">
               <img
                 src={image}
