@@ -10,6 +10,7 @@ import TestimonialIcon from "../components/testimonialIcon";
 import Testimonial from "../components/testimonial";
 import WhoWeAre from "../components/whoWeAre";
 import TeamCard from "../components/teamCard";
+import SecondHomeCardGrid from './../components/secondHomeCardGrid';
 const Home = () => {
 
   return (
@@ -107,6 +108,9 @@ const Home = () => {
       <div className="mt-[60px]">
         <WhoWeAre/>
         </div>
+        <div>
+          <SecondHomeCardGrid/>
+          </div>
     </>
   );
 };
