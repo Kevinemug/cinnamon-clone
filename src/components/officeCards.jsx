@@ -4,9 +4,9 @@ import {GrLocation} from 'react-icons/gr'
 const OfficeCards = ({place,location,img}) => {
     return ( <>
     
-    <div className='pl-[30px] flex flex-col gap-[50px]'>
+    <div className='pl-[30px] flex flex-col gap-[50px] lg:overflow-y-hidden lg:overflow-x-hidden'>
         <div>
-            <div className='w-[250px] h-[250px] md:w-[590px] md:h-[590px]'><img src={img} alt="" /></div>
+            <div className='w-[250px] h-[250px] md:w-[500px] md:h-[500px]'><img src={img} alt="" /></div>
             <div className='-mt-[50px] md:-mt-[120px] flex flex-col gap-[5px] hover:text-[#5135ff]' >
                 <div className='flex gap-[10px]'>
                     <div ><GrLocation className='text-[24px] text-gray-300 '/></div>

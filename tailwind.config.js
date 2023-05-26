@@ -16,7 +16,7 @@ export default {
     },
     fontFamily:{
       'heavy' :'MontHeavy'
-    }
+    },
   },
   plugins: [],
 }

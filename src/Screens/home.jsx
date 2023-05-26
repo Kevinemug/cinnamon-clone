@@ -14,6 +14,7 @@ import SecondHomeCardGrid from "./../components/secondHomeCardGrid";
 import SectionWithArrows from "../components/sectionWithArrows";
 import OfficeCards from "../components/officeCards";
 import React, { useRef } from 'react';
+import LoopCard from "../components/loopCard";
 const Home = () => {
   const containerRef = useRef(null);
   const handleScrollLeft = () => {
@@ -37,7 +38,7 @@ const Home = () => {
             off the ground and build a momentum for your success"
           />
         </div>
-        <div className="transform flex -rotate-[90deg] ml-[50px]  lg:ml-[180px] font-semibold  h-[50%] md: -mt-[20px] lg:-mt-[20px] text-[#cbcbcb] origin-bottom-left ">
+        <div className="transform flex -rotate-[90deg] ml-[50px]  lg:ml-[180px] font-semibold  h-[50%] md: -mt-[20px] lg:-mt-[10px] text-[#cbcbcb] origin-bottom-left ">
           <div className="mx-[8px] animate-bounce">
             <AiOutlineArrowLeft className="text-xl " />
           </div>
@@ -124,8 +125,8 @@ const Home = () => {
         <SectionWithArrows />
       </div>
 
-      <div className="mt-[90px] flex flex-col gap-[50px] lg:pl-[150px] lg:overflow-x-hidden">
-        <div className="text-[50px] font-bold text-[rgb(34,34,34)] pl-[30px] ">
+      <div className="mt-[90px] flex flex-col gap-[50px] lg:pl-[150px] lg:overflow-x-hidden ">
+        <div className="text-[30px] lg:text-[50px] font-bold font-[mont] text-[rgb(34,34,34)] pl-[30px] ">
           Our offices
         </div>
         <div className="w-screen overflow-x-auto lg:overflow-x-hidden ">
@@ -147,11 +148,24 @@ const Home = () => {
             />
           </div>
         </div>
-      <div className="flex  -mt-[50px] gap-[70px] ml-[20px]">
+      <div className="flex  -mt-[50px] lg:-mt-[20px] gap-[70px] ml-[20px] ">
   <div><img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-left.cd95ba98.png&w=48&q=100" alt="" /></div>
   <div><img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-right.edcfdab6.png&w=48&q=100" alt="" /></div>
 </div> 
       </div>
+
+
+
+      {/* <div className="mt-[90px] flex flex-col gap-[50px] lg:pl-[150px]  ">
+        <div className="text-[30px]   lg:text-[50px] font-bold text-[rgb(34,34,34)] font-black font-[Mont] pl-[30px] w-[60%] ">
+        Stay in the loop on tech topics
+        </div>
+        <div>
+
+
+        </div>
+      </div> */}
+
    </>
   );
 };
