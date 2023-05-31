@@ -20,7 +20,7 @@ const TeamCard = ({link,image,text,name}) => {
             <div className={`${isActive === link ? 'block' : 'hidden'}`} >
               <MdOutlineHorizontalRule className="font-black text-5xl " />
             </div>
-            <div className=" " >{name}</div>
+            <div className={`font-["Mont-Bold"]`} >{name}</div>
           </div>
                {
             isActive === link ? (

@@ -28,7 +28,8 @@ const Home = () => {
       <HomeNav />
 
       <div>
-        <div className="bg-[#1C1C1C] bg-hero-pattern md:h-[600px] h-[100vh] lg:h-[100vh] w-screen max-w-[100%] ">
+        <div className="bg-[#1C1C1C] bg-hero-pattern  md:h-[600px] h-[100vh] lg:h-[100vh] w-screen max-w-[100%] ">
+          <div className="lg:max-w-[2440px] lg:mx-auto">
           <Title
             color="text-[#f6f6f6]"
             t1="Results focused design &"
@@ -37,6 +38,8 @@ const Home = () => {
             shape your product from scratch. Either way, we’ll get your product
             off the ground and build a momentum for your success"
           />
+          </div>
+          
         </div>
         <div className="transform flex -rotate-[90deg] ml-[50px]  lg:ml-[180px] font-semibold  h-[50%] md: -mt-[20px] lg:-mt-[10px] text-[#cbcbcb] origin-bottom-left ">
           <div className="mx-[8px] animate-bounce">
@@ -78,7 +81,7 @@ const Home = () => {
       </div>
 
       <div className="bg-[#1C1C1C] bg-hero-pattern px-[30px] lg:grid grid-cols-2 lg:mt-[150px]">
-        <div className=" text-[40px] lg:text-[54px] lg:pl-[120px] text-[white] font-bold mt-[50px] pt-[60px]">
+        <div className={ `text-[40px] lg:text-[54px] lg:pl-[120px] text-[white] font-bold mt-[50px] pt-[60px] font-["Mont-Heavy"]`}>
           Our Services
         </div>
 
@@ -126,7 +129,7 @@ const Home = () => {
       </div>
 
       <div className="mt-[90px] flex flex-col gap-[50px] lg:pl-[150px] lg:overflow-x-hidden ">
-        <div className="text-[30px] lg:text-[50px] font-bold font-[mont] text-[rgb(34,34,34)] pl-[30px] ">
+        <div className={`text-[30px] lg:text-[50px] font-bold font-[mont] text-[rgb(34,34,34)] pl-[30px] font-["Mont-Heavy"]`} >
           Our offices
         </div>
         <div className="w-screen overflow-x-auto lg:overflow-x-hidden ">

@@ -8,11 +8,11 @@
 
 
 @font-face {
-    font-family: 'Mont';
+    font-family: 'Mont-Bold';
     src: url('./Fonts/MontBold.woff2');
 }
 @font-face {
-    font-family: 'Mont';
+    font-family: 'Mont-Heavy';
     src: url('./Fonts/MontHeavy.woff2');
 }
 @font-face {
@@ -20,7 +20,7 @@
     src: url('./Fonts/MontRegular.woff2');
 }
 @font-face {
-    font-family: 'Mont';
+    font-family: 'Mont-Semi-Bold';
     src: url('./Fonts/MontSemiBold.woff2');
 }
 

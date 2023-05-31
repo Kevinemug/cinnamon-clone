@@ -4,7 +4,7 @@ const WhoWeAre = () => {
   return (
     <>
       <div className="bg-[#f6f6f6] pl-[30px] pt-[80px]  lg:pl-[150px] flex flex-col gap-[60px] lg:first-letter:gap-[80px]">
-        <div className="text-[40px] font-bold  text-[#252525] ">Who we are</div>
+        <div className={`text-[40px] font-bold  text-[#252525]  font-["Mont-Bold"]`}>Who we are</div>
 
         <div className="flex flex-col gap-[30px]">
         <TeamCard

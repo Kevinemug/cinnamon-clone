@@ -11,8 +11,8 @@ const ServiceCard = ({icon,title,subTitle}) => {
             alt="icon"
           />
         </div>
-        <div className="font-bold text-white text-[20px]">{title}</div>
-        <div className="text-[rgb(207,207,207)] text-[18px] font-semibold md:w-[70%] ">
+        <div className={`font-bold text-white text-[20px]  font-[Mont-Bold]`}>{title}</div>
+        <div className={`text-[rgb(207,207,207)] text-[18px] font-semibold md:w-[70%] font-["Mont"]`} >
           {subTitle}
         </div>
       </div>

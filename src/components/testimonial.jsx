@@ -143,14 +143,14 @@ const Testimonial = () => {
             <TestimonialIcon/>
         </div>
         <div className="px-[30px] flex flex-col gap-[80px] lg:gap-[50px]">
-            <div className="text-[32px]  text-[#252525] font-bold -mt-[55px] lg:text-[45px] lg:w-[60%]">{title}</div>
-            <div className="text-[18px] text-[#626262] font-semibold lg:w-[60%]">{text}</div>
+            <div className={`text-[32px]  text-[#252525] font-bold -mt-[55px] lg:text-[45px] lg:w-[60%] font-[Mont-Bold]`}>{title}</div>
+            <div className={`text-[18px] text-[#626262] font-semibold lg:w-[60%] font-["Mont"]`}>{text}</div>
             <div className="-mt-[20px]">
                 <div className="lg:flex gap-[20px]">
                     <div className="w-[60px] h-[60px]"><img src={image} alt="" /></div>
                     <div>
-                        <div className="text-[20px] font-bold">{name}</div>
-                        <div className="text-[16px] font-semibold text-[#5b5b5b]">{founder}</div>
+                        <div className={`text-[20px] font-bold font-["Mont-Bold"]`}>{name}</div>
+                        <div className={`text-[16px] font-semibold text-[#5b5b5b] font-["Mont"]`} >{founder}</div>
                     </div>
                 </div>
                 <div className="flex gap-[60px] mt-[40px]">
