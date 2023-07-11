@@ -6,15 +6,13 @@ import BackgroundCard from "../components/backgroundCard";
 import ServiceCard from "../components/serviceCard";
 import Button from "../components/button";
 import HomeCardGrid from "../components/homeCardGrid";
-import TestimonialIcon from "../components/testimonialIcon";
 import Testimonial from "../components/testimonial";
 import WhoWeAre from "../components/whoWeAre";
-import TeamCard from "../components/teamCard";
 import SecondHomeCardGrid from "./../components/secondHomeCardGrid";
 import SectionWithArrows from "../components/sectionWithArrows";
 import OfficeCards from "../components/officeCards";
 import React, { useRef } from 'react';
-import LoopCard from "../components/loopCard";
+import SubFooter from "../components/subFooter";
 const Home = () => {
   const containerRef = useRef(null);
   const handleScrollLeft = () => {
@@ -23,11 +21,12 @@ const Home = () => {
       container.scrollLeft -= 1000; // Adjust the scroll distance as needed
     }
   };
+                                                                                
   return (
     <>
       <HomeNav />
 
-      <div>
+      <div className="flex flex-col justify-center">
         <div className="bg-[#1C1C1C] bg-hero-pattern  md:h-[600px] h-[100vh] lg:h-[100vh] w-screen max-w-[100%] ">
           <div className="lg:max-w-[2440px] lg:mx-auto">
           <Title
@@ -41,16 +40,18 @@ const Home = () => {
           </div>
           
         </div>
-        <div className="transform flex -rotate-[90deg] ml-[50px]  lg:ml-[180px] font-semibold  h-[50%] md: -mt-[20px] lg:-mt-[10px] text-[#cbcbcb] origin-bottom-left ">
-          <div className="mx-[8px] animate-bounce">
-            <AiOutlineArrowLeft className="text-xl " />
+        <div className="lg:flex lg:gap-[560px]">
+          <div className="transform flex -rotate-[90deg] ml-[50px] lg:mx-auto  font-semibold  h-[50%] md: -mt-[20px]  text-[#cbcbcb] origin-bottom-left ">
+            <div className=" animate-bounce">
+              <AiOutlineArrowLeft className="text-xl " />
+            </div>
+            <div>SEE OUR WORK</div>
           </div>
-          <div>SEE OUR WORK</div>
+          <div className="flex  lg:mx-auto  -mt-[200px] md:-mt-[250px] ml-[200px] md:ml-[600px] lg:-mt-[250px]">
+            <div className="h-[140px] w-[140px] bg-no-repeat  shadow-3xl  bg-contain bg-center bg-hero-circle bg-[black] rounded-[50%]"></div>
+          </div>
+                </div>
         </div>
-        <div className="flex  -mt-[200px] md:-mt-[250px] ml-[200px] md:ml-[600px] lg:ml-[1140px] lg:-mt-[250px]">
-          <div className="h-[140px] w-[140px] bg-no-repeat  shadow-3xl  bg-contain bg-center bg-hero-circle bg-[black] rounded-[50%]"></div>
-        </div>
-      </div>
 
       <div className=" mt-[160px]  flex flex-col gap-[40px]   md:mt-[200px]  ">
         <BackgroundCard
@@ -168,6 +169,7 @@ const Home = () => {
 
         </div>
       </div> */}
+      <SubFooter/>
 
    </>
   );
