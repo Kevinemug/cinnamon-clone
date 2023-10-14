@@ -7,7 +7,7 @@ const SubFooter = () => {
 
 <div className='flex flex-col items-center  justify-center'>
 <div className={`text-[40px] text-center font-["Mont-Bold"]`} >
-    Have a project iin mind?
+    Have a project in mind?
     Let's work together.
 </div>
 <div>
